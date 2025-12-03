@@ -10,9 +10,7 @@ public class ConfigProperties {
 
     static {
         try {
-            FileInputStream file = new FileInputStream("src/main/resources/config.properties");
-            properties.load(file);
-
+            properties.load(ConfigProperties.class.getClassLoader().getResourceAsStream("config.properties"));
         } catch (IOException e) {
             System.err.println("Error loading config.properties");
             throw new RuntimeException(e);
@@ -22,5 +20,4 @@ public class ConfigProperties {
     public static String getProperty(String key) {
         return properties.getProperty(key);
     }
-
 }

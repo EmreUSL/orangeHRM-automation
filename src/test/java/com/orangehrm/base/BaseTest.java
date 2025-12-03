@@ -5,13 +5,8 @@ import com.orangehrm.utilities.ConfigProperties;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
@@ -19,17 +14,9 @@ public class BaseTest {
 
     protected WebDriver driver;
 
-    public WebDriver getDriver() {
-        return driver;
-    }
-
-    public void setDriver(WebDriver driver) {
-        this.driver = driver;
-    }
-
-    private void configureBrowser() {
+    public void configureBrowser() {
         //Implicit Wait
-        int implicitWait = Integer.parseInt(ConfigProperties.getProperty("implicitWait"));
+        int implicitWait = Integer.parseInt(ConfigProperties.getProperty("explicitWait"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
 
         //Maximize the browser
@@ -43,7 +30,7 @@ public class BaseTest {
         }
     }
 
-    private void launchBrowser() {
+    public void launchBrowser() {
         //Initialize the WebDriver base on browser defined in config.properties file
         String browser = ConfigProperties.getProperty("browser");
         driver = ConfigureBrowser.setDriver(browser);
@@ -66,6 +53,14 @@ public class BaseTest {
                 System.out.println("Failed to quit driver: " + e.getMessage());
             }
         }
+    }
+
+    public WebDriver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(WebDriver driver) {
+        this.driver = driver;
     }
 
     //Static wait for pause, use whenever you want

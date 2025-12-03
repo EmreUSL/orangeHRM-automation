@@ -21,12 +21,12 @@ import java.util.Properties;
 
 public class ActionDriver {
 
-     private WebDriver driver;
-     private WebDriverWait wait;
+     private final WebDriver driver;
+     private final WebDriverWait wait;
 
      public ActionDriver(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(ConfigProperties.getProperty("durationSecond"))));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(ConfigProperties.getProperty("explicitWait"))));
      }
 
      //Method to click an element
@@ -77,14 +77,7 @@ public class ActionDriver {
     public boolean isDisplayed(By locator) {
          try {
              waitForElementVisible(locator);
-             boolean isDisplayed = driver.findElement(locator).isDisplayed();
-             if (isDisplayed) {
-                 System.out.println("The element is displayed");
-                 return true;
-             } else {
-                 System.out.println("The element is not displayed");
-                 return false;
-             }
+             return driver.findElement(locator).isDisplayed();
          } catch (Exception e) {
              System.out.println("Unable to display the element" + e.getMessage());
              return false;
@@ -130,11 +123,4 @@ public class ActionDriver {
              System.out.println("element is not visible"+ e.getMessage());
          }
      }
-
-
-
-
-
-
-
 }
