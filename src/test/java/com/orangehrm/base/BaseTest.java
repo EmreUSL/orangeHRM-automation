@@ -1,5 +1,6 @@
 package com.orangehrm.base;
 
+import com.orangehrm.actiondriver.ActionDriver;
 import com.orangehrm.core.ConfigureBrowser;
 import com.orangehrm.utilities.ConfigProperties;
 import org.openqa.selenium.WebDriver;
@@ -12,8 +13,9 @@ import java.util.concurrent.locks.LockSupport;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    protected static WebDriver driver;
 
+    //Configure Browser class içerisinde static olarak tanımlayabilirsin
     public void configureBrowser() {
         //Implicit Wait
         int implicitWait = Integer.parseInt(ConfigProperties.getProperty("explicitWait"));
@@ -53,14 +55,19 @@ public class BaseTest {
                 System.out.println("Failed to quit driver: " + e.getMessage());
             }
         }
+        driver = null;
     }
 
     public WebDriver getDriver() {
+        if (driver == null) {
+            System.out.println("WebDriver Not Initialized");
+            throw new IllegalStateException("WebDriver Not Initialized");
+        }
         return driver;
     }
 
     public void setDriver(WebDriver driver) {
-        this.driver = driver;
+        BaseTest.driver = driver;
     }
 
     //Static wait for pause, use whenever you want

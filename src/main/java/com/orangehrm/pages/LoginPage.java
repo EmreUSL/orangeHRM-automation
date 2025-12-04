@@ -1,20 +1,19 @@
 package com.orangehrm.pages;
 
 import com.orangehrm.actiondriver.ActionDriver;
+import com.orangehrm.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage {
-
-    private final ActionDriver actionDriver;
+public class LoginPage extends BasePage {
 
     private final By userNameField = By.name("username");
     private final By passwordField = By.name("password");
     private final By loginButton = By.xpath("//button[@type='submit']");
-    private final By errorMessage = By.xpath("///*[text()[contains(.,'Invalid credentials')]]");
+    private final By errorMessage = By.xpath("//*[text()[contains(.,'Invalid credentials')]]");
 
     public LoginPage(WebDriver driver) {
-        this.actionDriver = new ActionDriver(driver);
+        super(driver);
     }
 
     //Method to perform login

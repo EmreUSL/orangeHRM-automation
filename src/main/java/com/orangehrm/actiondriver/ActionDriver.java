@@ -27,6 +27,7 @@ public class ActionDriver {
      public ActionDriver(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(ConfigProperties.getProperty("explicitWait"))));
+        System.out.println("Webdriver instance is created");
      }
 
      //Method to click an element

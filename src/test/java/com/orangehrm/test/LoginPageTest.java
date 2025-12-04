@@ -28,6 +28,14 @@ public class LoginPageTest extends BaseTest {
         Assert.assertTrue(homePage.verifyHomePageIsOpened());
     }
 
+    @Test
+    public void invalidLoginTest() {
+        String username = ConfigProperties.getProperty("username");;
+        loginPage.login(username, "adminnn");
+        Assert.assertTrue(loginPage.verifyErrorMessage("Invalid credentials"),"Test Failed: Invalid error message");
+    }
+
+
 
 
 }
