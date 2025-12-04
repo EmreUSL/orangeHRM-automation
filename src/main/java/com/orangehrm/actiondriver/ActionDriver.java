@@ -2,6 +2,8 @@ package com.orangehrm.actiondriver;
 
 import com.orangehrm.core.ConfigureBrowser;
 import com.orangehrm.utilities.ConfigProperties;
+import com.orangehrm.utilities.LoggerManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -23,11 +25,12 @@ public class ActionDriver {
 
      private final WebDriver driver;
      private final WebDriverWait wait;
+     private static final Logger logger = LoggerManager.getLogger(ActionDriver.class);
 
      public ActionDriver(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(ConfigProperties.getProperty("explicitWait"))));
-        System.out.println("Webdriver instance is created");
+        logger.info("Webdriver instance is created");
      }
 
      //Method to click an element
@@ -35,8 +38,9 @@ public class ActionDriver {
          try {
              waitForElementClickable(locator);
              driver.findElement(locator).click();
+             logger.info("clicked an element");
          } catch (TimeoutException e) {
-             System.out.println("unable to click element " + e.getMessage());
+             logger.error("unable to click element");
          }
      }
 
@@ -46,8 +50,9 @@ public class ActionDriver {
              waitForElementVisible(locator);
              driver.findElement(locator).clear();
              driver.findElement(locator).sendKeys(text);
+             logger.info("value entered successfully");
          } catch (Exception e) {
-             System.out.println("Unable to enter the value" + e.getMessage());
+             logger.error("Unable to enter the value");
          }
     }
 
@@ -57,7 +62,7 @@ public class ActionDriver {
              waitForElementVisible(locator);
              return driver.findElement(locator).getText();
         } catch (Exception e) {
-            System.out.println("Unable to get the text" + e.getMessage());
+            logger.error("Unable to get the text");
             return "";
         }
     }
@@ -69,7 +74,7 @@ public class ActionDriver {
              String actualText = driver.findElement(locator).getText();
              return actualText.equals(text);
         } catch (TimeoutException e) {
-            System.out.println("Unable to compare the texts" + e.getMessage());
+            logger.error("Unable to compare the texts");
             return false;
         }
     }
@@ -92,7 +97,7 @@ public class ActionDriver {
              WebElement element = driver.findElement(locator);
              js.executeScript("arguments[0].scrollIntoView(true);", element);
          } catch (Exception e) {
-             System.out.println("Unable to scroll the element" + e.getMessage());
+             logger.error("Unable to scroll the element");
          }
     }
 
@@ -101,9 +106,9 @@ public class ActionDriver {
          try {
              wait.withTimeout(Duration.ofSeconds(timeOutInSeconds)).until(WebDriver -> Objects.equals(((JavascriptExecutor) driver)
                      .executeScript("return document.readyState"), "complete"));
-             System.out.println("Page loaded successfully");
+             logger.info("Page loaded successfully");
          } catch (Exception e) {
-             System.out.println("Page did not load within"+ timeOutInSeconds + e.getMessage());
+             logger.error("Page did not load");
          }
     }
 
@@ -112,7 +117,7 @@ public class ActionDriver {
          try {
              wait.until(ExpectedConditions.elementToBeClickable(locator));
          } catch (TimeoutException e) {
-             System.out.println("element is not clickable"+ e.getMessage());
+             logger.error("element is not clickable");
          }
      }
 
@@ -121,7 +126,7 @@ public class ActionDriver {
          try {
              wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
          } catch (TimeoutException e) {
-             System.out.println("element is not visible"+ e.getMessage());
+             logger.error("element is not visible");
          }
      }
 }

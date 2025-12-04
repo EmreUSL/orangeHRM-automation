@@ -6,6 +6,7 @@ import com.orangehrm.pages.HomePage;
 import com.orangehrm.pages.LoginPage;
 import com.orangehrm.utilities.ConfigProperties;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
