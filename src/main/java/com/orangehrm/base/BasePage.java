@@ -7,11 +7,11 @@ import org.openqa.selenium.WebDriver;
 
 public class BasePage {
 
-    protected WebDriver driver;
+    private static final ThreadLocal<WebDriver> tdriver = new ThreadLocal<>();
     protected static ActionDriver actionDriver;
 
     public BasePage(WebDriver driver) {
-        this.driver = driver;
+        tdriver.set(driver);
         actionDriver = new ActionDriver(driver);
     }
 }

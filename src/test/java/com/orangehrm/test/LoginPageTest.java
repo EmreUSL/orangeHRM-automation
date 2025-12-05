@@ -4,6 +4,7 @@ import com.orangehrm.base.BaseTest;
 import com.orangehrm.pages.HomePage;
 import com.orangehrm.pages.LoginPage;
 import com.orangehrm.utilities.ConfigProperties;
+import com.orangehrm.utilities.ExtentManager;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -22,10 +23,13 @@ public class LoginPageTest extends BaseTest {
 
     @Test
     public void verifyValidLoginTest() {
+        ExtentManager.startTest("Valid login test");
+        ExtentManager.logStep("Navigating to login page");
         String username = ConfigProperties.getProperty("username");
         String password = ConfigProperties.getProperty("password");
         loginPage.login(username, password);
-        Assert.assertTrue(homePage.verifyHomePageIsOpened());
+        ExtentManager.logStep("Verify home page opened or not");
+        Assert.assertTrue(homePage.verifyHomePageIsOpened());;
     }
 
     @Test

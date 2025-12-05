@@ -1,7 +1,9 @@
 package com.orangehrm.actiondriver;
 
+import com.orangehrm.base.BasePage;
 import com.orangehrm.core.ConfigureBrowser;
 import com.orangehrm.utilities.ConfigProperties;
+import com.orangehrm.utilities.ExtentManager;
 import com.orangehrm.utilities.LoggerManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -35,12 +37,16 @@ public class ActionDriver {
 
      //Method to click an element
      public void click(By locator) {
+         String elementDescription = getElementDescription(locator);
          try {
              waitForElementClickable(locator);
              driver.findElement(locator).click();
-             logger.info("clicked an element");
+             ExtentManager.logStep("clicked an element: "+ elementDescription);
+             ExtentManager.logStepWithScreenshot(driver, "Element is Displayed", "Element is displayed");
+             logger.info("clicked an element --> " + elementDescription);
          } catch (TimeoutException e) {
              logger.error("unable to click element");
+             ExtentManager.logFailure(driver, "Unable to click element: ", elementDescription);
          }
      }
 
@@ -50,7 +56,7 @@ public class ActionDriver {
              waitForElementVisible(locator);
              driver.findElement(locator).clear();
              driver.findElement(locator).sendKeys(text);
-             logger.info("value entered successfully");
+             logger.info("value entered successfully " + getElementDescription(locator) + "value");
          } catch (Exception e) {
              logger.error("Unable to enter the value");
          }
@@ -83,9 +89,12 @@ public class ActionDriver {
     public boolean isDisplayed(By locator) {
          try {
              waitForElementVisible(locator);
+             ExtentManager.logStep("Element is displayed: " + getElementDescription(locator));
+             ExtentManager.logStepWithScreenshot(driver, "Element is Displayed", "Element is displayed");
              return driver.findElement(locator).isDisplayed();
          } catch (Exception e) {
              System.out.println("Unable to display the element" + e.getMessage());
+             ExtentManager.logFailure(driver, "Element is not displayed", "Element is not displayed: "+ getElementDescription(locator));
              return false;
          }
     }
@@ -128,5 +137,33 @@ public class ActionDriver {
          } catch (TimeoutException e) {
              logger.error("element is not visible");
          }
+     }
+
+     //Method to get the description of an element using By locator
+     public String getElementDescription(By locator) {
+         if (driver == null) return "driver is null";
+         if (locator == null) return "locator is null";
+
+         try {
+         WebElement element = driver.findElement(locator);
+         String name = element.getDomAttribute("name");
+         String id = element.getDomAttribute("id");
+         String text = element.getText();
+         String className = element.getDomAttribute("class");
+         String placeholder = element.getDomAttribute("placeholder");
+
+         if(isNotEmpty(name)) {return "Element with name" + name; }
+         else if (isNotEmpty(id)) {return "Element with id " + id; }
+         else if (isNotEmpty(text)) {return "Element with text " + text; }
+         else if (isNotEmpty(className)) {return "Element with class " + className; }
+         else if (isNotEmpty(placeholder)) {return "Element with placeholder " + placeholder; }
+         } catch (Exception e) {
+             logger.error("Unable to find element");
+         }
+         return null;
+     }
+
+     private boolean isNotEmpty(String value) {
+         return value != null && !value.isEmpty();
      }
 }

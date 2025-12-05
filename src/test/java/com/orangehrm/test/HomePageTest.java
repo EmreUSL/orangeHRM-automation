@@ -21,7 +21,7 @@ public class HomePageTest extends BaseTest {
         homePage = new HomePage(getDriver());
     }
 
-    @Test(priority = 1)
+    @Test
     public void verifyHomePageDisplayed() {
         String username = ConfigProperties.getProperty("username");
         String password = ConfigProperties.getProperty("password");
@@ -29,7 +29,7 @@ public class HomePageTest extends BaseTest {
         Assert.assertTrue(homePage.verifyHomePageIsOpened(), "Home page is not opened");
     }
 
-    @Test(priority = 2)
+    @Test
     public void isAdminTabDisplayed() {
         String username = ConfigProperties.getProperty("username");
         String password = ConfigProperties.getProperty("password");
@@ -37,7 +37,7 @@ public class HomePageTest extends BaseTest {
         Assert.assertTrue(homePage.isAdminTabVisible(), "Admin tab is not visible");
     }
 
-    @Test(priority = 3)
+    @Test
     public void isLogoutSuccess() {
         String username = ConfigProperties.getProperty("username");
         String password = ConfigProperties.getProperty("password");
