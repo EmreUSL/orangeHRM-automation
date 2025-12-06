@@ -41,8 +41,6 @@ public class ActionDriver {
          try {
              waitForElementClickable(locator);
              driver.findElement(locator).click();
-             ExtentManager.logStep("clicked an element: "+ elementDescription);
-             ExtentManager.logStepWithScreenshot(driver, "Element is Displayed", "Element is displayed");
              logger.info("clicked an element --> " + elementDescription);
          } catch (TimeoutException e) {
              logger.error("unable to click element");
@@ -89,12 +87,9 @@ public class ActionDriver {
     public boolean isDisplayed(By locator) {
          try {
              waitForElementVisible(locator);
-             ExtentManager.logStep("Element is displayed: " + getElementDescription(locator));
-             ExtentManager.logStepWithScreenshot(driver, "Element is Displayed", "Element is displayed");
              return driver.findElement(locator).isDisplayed();
          } catch (Exception e) {
              System.out.println("Unable to display the element" + e.getMessage());
-             ExtentManager.logFailure(driver, "Element is not displayed", "Element is not displayed: "+ getElementDescription(locator));
              return false;
          }
     }

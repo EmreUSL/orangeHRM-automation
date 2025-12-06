@@ -14,4 +14,8 @@ public class BasePage {
         tdriver.set(driver);
         actionDriver = new ActionDriver(driver);
     }
+
+    public static WebDriver getDriver() {
+        return tdriver.get();
+    }
 }

@@ -23,12 +23,9 @@ public class LoginPageTest extends BaseTest {
 
     @Test
     public void verifyValidLoginTest() {
-        ExtentManager.startTest("Valid login test");
-        ExtentManager.logStep("Navigating to login page");
         String username = ConfigProperties.getProperty("username");
         String password = ConfigProperties.getProperty("password");
         loginPage.login(username, password);
-        ExtentManager.logStep("Verify home page opened or not");
         Assert.assertTrue(homePage.verifyHomePageIsOpened());;
     }
 

@@ -46,10 +46,6 @@ public class BaseTest {
         logger.info("Driver initialized for thread: " + Thread.currentThread().threadId());
     }
 
-    @BeforeSuite
-    public void loadConfig() {
-        ExtentManager.getReport();
-    }
 
     @BeforeMethod
     public synchronized void setUp() throws IOException {
@@ -69,7 +65,6 @@ public class BaseTest {
                 System.out.println("Failed to quit driver: " + e.getMessage());
             }
             driver.remove();
-            ExtentManager.endTest();
         }
     }
 

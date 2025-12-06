@@ -1,5 +1,6 @@
 package com.orangehrm.core;
 
+import com.orangehrm.base.BasePage;
 import com.orangehrm.utilities.ExtentManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

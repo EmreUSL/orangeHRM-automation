@@ -86,8 +86,9 @@ public class ExtentManager {
     }
 
     //log a skip
-    public static void logSkip(WebDriver driver, String message, String screenshotMessage) {
-        getTest().skip(message);
+    public static void logSkip(String message) {
+        String colorMessage = String.format("<span style='color:orange'>%s</span>", message);
+        getTest().skip(colorMessage);
     }
 
     public synchronized static String takeScreenShot(WebDriver driver, String screenshotName) {
