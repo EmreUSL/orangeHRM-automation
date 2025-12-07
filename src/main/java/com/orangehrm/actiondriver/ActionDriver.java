@@ -39,10 +39,12 @@ public class ActionDriver {
      public void click(By locator) {
          String elementDescription = getElementDescription(locator);
          try {
+             applyBorder(locator,"green");
              waitForElementClickable(locator);
              driver.findElement(locator).click();
              logger.info("clicked an element --> " + elementDescription);
          } catch (TimeoutException e) {
+             applyBorder(locator,"red");
              logger.error("unable to click element");
              ExtentManager.logFailure(driver, "Unable to click element: ", elementDescription);
          }
@@ -51,11 +53,13 @@ public class ActionDriver {
      //Method to enter text into an input field
     public void enterText(By locator, String text) {
          try {
+             applyBorder(locator,"green");
              waitForElementVisible(locator);
              driver.findElement(locator).clear();
              driver.findElement(locator).sendKeys(text);
              logger.info("value entered successfully " + getElementDescription(locator) + "value");
          } catch (Exception e) {
+             applyBorder(locator,"red");
              logger.error("Unable to enter the value");
          }
     }
@@ -63,9 +67,11 @@ public class ActionDriver {
     //Method to get text from an input field
     public String getText(By locator) {
         try {
+            applyBorder(locator,"green");
              waitForElementVisible(locator);
              return driver.findElement(locator).getText();
         } catch (Exception e) {
+            applyBorder(locator,"red");
             logger.error("Unable to get the text");
             return "";
         }
@@ -86,9 +92,11 @@ public class ActionDriver {
     //Method to check if an element is displayed
     public boolean isDisplayed(By locator) {
          try {
+             applyBorder(locator,"green");
              waitForElementVisible(locator);
              return driver.findElement(locator).isDisplayed();
          } catch (Exception e) {
+             applyBorder(locator,"red");
              System.out.println("Unable to display the element" + e.getMessage());
              return false;
          }
@@ -97,10 +105,12 @@ public class ActionDriver {
     //Scroll to an element
     public void scrollToElement(By locator) {
          try {
+             applyBorder(locator,"green");
              JavascriptExecutor js = (JavascriptExecutor) driver;
              WebElement element = driver.findElement(locator);
              js.executeScript("arguments[0].scrollIntoView(true);", element);
          } catch (Exception e) {
+             applyBorder(locator,"red");
              logger.error("Unable to scroll the element");
          }
     }
@@ -160,5 +170,19 @@ public class ActionDriver {
 
      private boolean isNotEmpty(String value) {
          return value != null && !value.isEmpty();
+     }
+
+     //Utility Method to Border an element
+     public void applyBorder(By locator, String color) {
+         try {
+             WebElement element = driver.findElement(locator);
+             String script = "arguments[0].style.border='3px solid " + color + "'";
+             JavascriptExecutor js = (JavascriptExecutor) driver;
+             js.executeScript(script, element);
+             logger.info("border applied successfully");
+         } catch (Exception e) {
+             logger.warn("Failed to apply border");
+         }
+
      }
 }
