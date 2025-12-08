@@ -1186,3 +1186,103 @@
 2025-12-07 16:42:51 INFO  LoggerManager:182 - border applied successfully
 2025-12-07 16:42:52 INFO  LoggerManager:45 - clicked an element --> Element with text Login
 2025-12-07 16:42:52 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-08 15:56:32 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-08 15:56:32 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-08 15:56:33 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-08 15:56:33 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:56:33 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:56:33 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:56:33 INFO  LoggerManager:60 - value entered successfully Element with nameusernamevalue
+2025-12-08 15:56:33 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:56:33 INFO  LoggerManager:60 - value entered successfully Element with namepasswordvalue
+2025-12-08 15:56:33 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:56:33 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-08 15:57:00 WARN  LoggerManager:184 - Failed to apply border
+2025-12-08 15:57:00 WARN  LoggerManager:184 - Failed to apply border
+2025-12-08 15:57:09 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-08 15:57:09 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-08 15:57:10 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-08 15:57:10 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:57:10 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:57:10 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:10 INFO  LoggerManager:60 - value entered successfully Element with nameusernamevalue
+2025-12-08 15:57:10 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:10 INFO  LoggerManager:60 - value entered successfully Element with namepasswordvalue
+2025-12-08 15:57:10 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:10 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-08 15:57:15 WARN  LoggerManager:184 - Failed to apply border
+2025-12-08 15:57:15 WARN  LoggerManager:184 - Failed to apply border
+2025-12-08 15:57:34 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-08 15:57:34 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-08 15:57:35 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-08 15:57:35 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:57:35 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:57:35 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:35 INFO  LoggerManager:60 - value entered successfully Element with nameusernamevalue
+2025-12-08 15:57:35 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:35 INFO  LoggerManager:60 - value entered successfully Element with namepasswordvalue
+2025-12-08 15:57:35 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:35 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-08 15:57:39 WARN  LoggerManager:184 - Failed to apply border
+2025-12-08 15:57:39 WARN  LoggerManager:184 - Failed to apply border
+2025-12-08 15:57:43 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-08 15:57:43 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-08 15:57:44 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-08 15:57:44 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:57:44 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:57:44 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:44 INFO  LoggerManager:60 - value entered successfully Element with nameusernamevalue
+2025-12-08 15:57:44 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:44 INFO  LoggerManager:60 - value entered successfully Element with namepasswordvalue
+2025-12-08 15:57:44 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:44 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-08 15:57:45 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-08 15:57:45 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-08 15:57:45 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-08 15:57:46 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-08 15:57:46 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:57:46 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:57:46 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:46 INFO  LoggerManager:60 - value entered successfully Element with nameusernamevalue
+2025-12-08 15:57:46 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:46 INFO  LoggerManager:60 - value entered successfully Element with namepasswordvalue
+2025-12-08 15:57:46 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:57:46 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-08 15:57:47 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-08 15:58:33 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-08 15:58:33 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-08 15:58:33 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-08 15:58:34 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:58:34 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:58:34 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:34 INFO  LoggerManager:60 - value entered successfully Element with nameusernamevalue
+2025-12-08 15:58:34 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:34 INFO  LoggerManager:60 - value entered successfully Element with namepasswordvalue
+2025-12-08 15:58:34 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:34 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-08 15:58:35 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:35 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-08 15:58:36 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-08 15:58:36 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-08 15:58:36 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-08 15:58:36 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:58:36 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:58:37 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:37 INFO  LoggerManager:60 - value entered successfully Element with nameusernamevalue
+2025-12-08 15:58:37 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:37 INFO  LoggerManager:60 - value entered successfully Element with namepasswordvalue
+2025-12-08 15:58:37 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:37 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-08 15:58:37 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-08 15:58:38 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-08 15:58:38 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-08 15:58:39 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-08 15:58:39 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:58:39 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-08 15:58:39 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:39 INFO  LoggerManager:60 - value entered successfully Element with nameusernamevalue
+2025-12-08 15:58:39 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:39 INFO  LoggerManager:60 - value entered successfully Element with namepasswordvalue
+2025-12-08 15:58:39 INFO  LoggerManager:182 - border applied successfully
+2025-12-08 15:58:39 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-08 15:58:40 INFO  BaseTest:63 - Driver Closed successfully
