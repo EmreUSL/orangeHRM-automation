@@ -25,7 +25,7 @@ public class DBConnection {
 
     //Get the employee details from DB and store in a map
     public static Map<String,String> getEmployeeDetails(String employeeId) {
-        String query = "SELECT emp_firstname, emp_middle_name, emp_lastname FROM hr_hr_employees WHERE employee_id =" + employeeId;
+        String query = "SELECT emp_firstname, emp_middle_name, emp_lastname FROM hs_hr_employee WHERE employee_id =" + employeeId;
 
         Map<String, String> employeeDetails = new HashMap<>();
 

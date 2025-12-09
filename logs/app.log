@@ -1286,3 +1286,255 @@
 2025-12-08 15:58:39 INFO  LoggerManager:182 - border applied successfully
 2025-12-08 15:58:39 INFO  LoggerManager:45 - clicked an element --> Element with text Login
 2025-12-08 15:58:40 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:03:58 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:03:58 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-09 18:03:59 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:03:59 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:03:59 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:03:59 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:05:07 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:05:07 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-09 18:05:07 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:05:07 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:05:07 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:05:07 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:05:28 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:05:28 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-09 18:05:28 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:05:28 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:05:28 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:05:29 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:29 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:29 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:29 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-09 18:05:30 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:30 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:05:31 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:05:31 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-09 18:05:31 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:05:31 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:05:31 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:05:31 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:32 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:32 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:32 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-09 18:05:32 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:05:33 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:05:33 INFO  BaseTest:46 - Driver initialized for thread: 1
+2025-12-09 18:05:34 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:05:34 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:05:34 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:05:34 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:34 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:34 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:05:34 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-09 18:05:34 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:12:30 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:12:30 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:12:31 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:12:31 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:12:31 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:12:31 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:12:31 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:12:31 ERROR LoggerManager:62 - Unable to enter the value
+2025-12-09 18:12:31 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:12:31 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:12:31 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-09 18:12:37 ERROR LoggerManager:162 - Unable to find element
+2025-12-09 18:12:37 WARN  LoggerManager:180 - Failed to apply border
+2025-12-09 18:12:54 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:12:54 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:12:55 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:12:55 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:12:55 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:12:55 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:12:55 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:12:56 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:12:56 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-09 18:12:56 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:12:57 INFO  LoggerManager:45 - clicked an element --> Element with text PIM
+2025-12-09 18:12:57 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:12:57 INFO  LoggerManager:45 - clicked an element --> Element with class oxd-icon-button
+2025-12-09 18:12:57 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:08 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:08 INFO  LoggerManager:45 - clicked an element --> Element with text Search
+2025-12-09 18:13:08 WARN  LoggerManager:180 - Failed to apply border
+2025-12-09 18:13:09 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:13:25 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:13:25 INFO  BaseTest:46 - Driver initialized for thread: 28
+2025-12-09 18:13:25 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:13:25 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:13:25 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:13:26 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:26 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:26 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:26 INFO  LoggerManager:45 - clicked an element --> Element with text Login
+2025-12-09 18:13:27 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:27 INFO  LoggerManager:45 - clicked an element --> Element with text PIM
+2025-12-09 18:13:27 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:28 INFO  LoggerManager:45 - clicked an element --> Element with class oxd-icon-button
+2025-12-09 18:13:28 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:38 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:38 INFO  LoggerManager:45 - clicked an element --> Element with text Search
+2025-12-09 18:13:38 INFO  LoggerManager:178 - border applied successfully
+2025-12-09 18:13:39 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:21:39 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:21:39 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:21:40 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:21:40 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:21:40 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:21:40 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:21:40 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:21:40 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:21:40 INFO  LoggerManager:51 - clicked element --> Element with text Login
+2025-12-09 18:21:41 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:21:42 INFO  LoggerManager:51 - clicked element --> Element with text PIM
+2025-12-09 18:21:49 ERROR LoggerManager:169 - Unable to find element
+2025-12-09 18:21:49 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:21:49 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:21:49 ERROR LoggerManager:55 - unable to click element
+2025-12-09 18:21:49 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:21:49 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:21:49 ERROR LoggerManager:69 - Unable to enter the value
+2025-12-09 18:21:49 ERROR LoggerManager:169 - Unable to find element
+2025-12-09 18:21:49 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:21:49 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:21:49 ERROR LoggerManager:55 - unable to click element
+2025-12-09 18:21:49 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:21:49 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:21:58 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:21:58 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:21:58 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:21:58 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:21:58 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:21:59 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:21:59 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:21:59 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:21:59 INFO  LoggerManager:51 - clicked element --> Element with text Login
+2025-12-09 18:22:00 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:22:00 INFO  LoggerManager:51 - clicked element --> Element with text PIM
+2025-12-09 18:22:04 ERROR LoggerManager:169 - Unable to find element
+2025-12-09 18:22:04 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:22:04 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:22:04 ERROR LoggerManager:55 - unable to click element
+2025-12-09 18:22:04 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:22:04 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:22:04 ERROR LoggerManager:69 - Unable to enter the value
+2025-12-09 18:22:04 ERROR LoggerManager:169 - Unable to find element
+2025-12-09 18:22:04 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:22:04 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:22:04 ERROR LoggerManager:55 - unable to click element
+2025-12-09 18:22:04 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:22:04 WARN  LoggerManager:187 - Failed to apply border
+2025-12-09 18:22:56 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:22:56 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:22:57 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:22:57 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:22:57 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:22:57 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:22:57 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:22:57 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:22:57 INFO  LoggerManager:51 - clicked element --> Element with text Login
+2025-12-09 18:22:58 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:22:59 INFO  LoggerManager:51 - clicked element --> Element with text PIM
+2025-12-09 18:22:59 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:22:59 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:22:59 INFO  LoggerManager:51 - clicked element --> Element with text Search
+2025-12-09 18:22:59 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:23:00 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:26:24 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:26:24 INFO  BaseTest:46 - Driver initialized for thread: 28
+2025-12-09 18:26:25 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:26:25 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:26:25 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:26:25 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:26:25 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:26:26 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:26:26 INFO  LoggerManager:51 - clicked element --> Element with text Login
+2025-12-09 18:26:26 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:26:27 INFO  LoggerManager:51 - clicked element --> Element with text PIM
+2025-12-09 18:26:27 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:26:27 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:26:28 INFO  LoggerManager:51 - clicked element --> Element with text Search
+2025-12-09 18:26:28 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:26:28 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:27:02 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:27:02 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:27:03 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:27:03 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:27:03 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:27:03 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:27:03 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:27:03 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:27:03 INFO  LoggerManager:51 - clicked element --> Element with text Login
+2025-12-09 18:27:04 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:27:05 INFO  LoggerManager:51 - clicked element --> Element with text PIM
+2025-12-09 18:27:05 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:27:05 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:27:05 INFO  LoggerManager:51 - clicked element --> Element with text Search
+2025-12-09 18:27:05 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:27:06 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:28:51 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:28:51 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:28:52 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:28:52 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:28:52 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:28:52 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:28:52 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:28:52 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:28:52 INFO  LoggerManager:51 - clicked element --> Element with text Login
+2025-12-09 18:28:53 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:28:54 INFO  LoggerManager:51 - clicked element --> Element with text PIM
+2025-12-09 18:28:54 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:28:54 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:28:54 INFO  LoggerManager:51 - clicked element --> Element with text Search
+2025-12-09 18:28:54 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:28:54 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:29:07 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:29:07 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:29:08 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:29:08 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:29:08 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:29:08 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:29:08 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:29:08 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:29:08 INFO  LoggerManager:51 - clicked element --> Element with text Login
+2025-12-09 18:29:09 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:29:10 INFO  LoggerManager:51 - clicked element --> Element with text PIM
+2025-12-09 18:29:10 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:29:10 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:29:10 INFO  LoggerManager:51 - clicked element --> Element with text Search
+2025-12-09 18:29:10 INFO  LoggerManager:187 - border applied successfully
+2025-12-09 18:29:10 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:29:33 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:29:33 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:29:34 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:29:34 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:29:34 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:29:34 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:29:34 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:29:35 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:29:35 INFO  LoggerManager:51 - clicked element --> Element with text Login
+2025-12-09 18:29:35 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:29:36 INFO  LoggerManager:51 - clicked element --> Element with text PIM
+2025-12-09 18:29:36 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:29:36 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:29:36 INFO  LoggerManager:51 - clicked element --> Element with text Search
+2025-12-09 18:29:37 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:29:37 INFO  BaseTest:63 - Driver Closed successfully
+2025-12-09 18:34:26 INFO  ConfigureBrowser:22 - ChromeDriver Instance is created
+2025-12-09 18:34:26 INFO  BaseTest:46 - Driver initialized for thread: 29
+2025-12-09 18:34:27 INFO  BaseTest:55 - WebDriver Initialized
+2025-12-09 18:34:27 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:34:27 INFO  LoggerManager:35 - Webdriver instance is created
+2025-12-09 18:34:27 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:34:27 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:34:27 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:34:27 INFO  LoggerManager:51 - clicked element --> Element with text Login
+2025-12-09 18:34:28 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:34:29 INFO  LoggerManager:51 - clicked element --> Element with text PIM
+2025-12-09 18:34:29 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:34:29 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:34:29 INFO  LoggerManager:51 - clicked element --> Element with text Search
+2025-12-09 18:34:29 INFO  LoggerManager:185 - border applied successfully
+2025-12-09 18:34:29 INFO  BaseTest:63 - Driver Closed successfully

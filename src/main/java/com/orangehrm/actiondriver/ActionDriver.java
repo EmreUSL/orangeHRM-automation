@@ -39,12 +39,19 @@ public class ActionDriver {
      public void click(By locator) {
          String elementDescription = getElementDescription(locator);
          try {
-             applyBorder(locator,"green");
-             waitForElementClickable(locator);
+             applyBorder(locator, "green");
+
+             try {
+                 waitForElementClickable(locator);
+             } catch (TimeoutException e) {
+                 logger.warn("Element not clickable, trying normal click anyway...");
+             }
+
              driver.findElement(locator).click();
-             logger.info("clicked an element --> " + elementDescription);
-         } catch (TimeoutException e) {
-             applyBorder(locator,"red");
+             logger.info("clicked element --> " + elementDescription);
+
+         } catch (Exception e) {
+             applyBorder(locator, "red");
              logger.error("unable to click element");
              ExtentManager.logFailure(driver, "Unable to click element: ", elementDescription);
          }
@@ -57,7 +64,6 @@ public class ActionDriver {
              waitForElementVisible(locator);
              driver.findElement(locator).clear();
              driver.findElement(locator).sendKeys(text);
-             logger.info("value entered successfully " + getElementDescription(locator) + "value");
          } catch (Exception e) {
              applyBorder(locator,"red");
              logger.error("Unable to enter the value");
@@ -72,7 +78,6 @@ public class ActionDriver {
              return driver.findElement(locator).getText();
         } catch (Exception e) {
             applyBorder(locator,"red");
-            logger.error("Unable to get the text");
             return "";
         }
     }
@@ -84,7 +89,6 @@ public class ActionDriver {
              String actualText = driver.findElement(locator).getText();
              return actualText.equals(text);
         } catch (TimeoutException e) {
-            logger.error("Unable to compare the texts");
             return false;
         }
     }
@@ -111,7 +115,6 @@ public class ActionDriver {
              js.executeScript("arguments[0].scrollIntoView(true);", element);
          } catch (Exception e) {
              applyBorder(locator,"red");
-             logger.error("Unable to scroll the element");
          }
     }
 

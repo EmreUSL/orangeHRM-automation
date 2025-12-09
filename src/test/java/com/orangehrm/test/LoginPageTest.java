@@ -30,8 +30,4 @@ public class LoginPageTest extends BaseTest {
         loginPage.login(username, password);
         Assert.assertTrue(loginPage.verifyErrorMessage("Invalid credentials"),"Test Failed: Invalid error message");
     }
-
-
-
-
 }
