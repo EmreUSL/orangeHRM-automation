@@ -7,7 +7,10 @@
     </listeners>
     <test name="OrangeHRMTest">
         <classes>
-            <class name="com.orangehrm.test.DBVerificationTest"> </class>
+            <!-- <class name="com.orangehrm.test.HomePageTest"> </class>
+            <class name="com.orangehrm.test.LoginPageTest"> </class>
+            <class name="com.orangehrm.test.DBVerificationTest"> </class> -->
+            <class name="com.orangehrm.test.ApiTest"> </class>
         </classes>
     </test>
 </suite>

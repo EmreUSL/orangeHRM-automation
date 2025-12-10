@@ -2,15 +2,23 @@ package com.orangehrm.listeners;
 
 import com.orangehrm.base.BasePage;
 import com.orangehrm.utilities.ExtentManager;
+import com.orangehrm.utilities.RetryAnalyzer;
 import org.openqa.selenium.WebDriver;
+import org.testng.IAnnotationTransformer;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.ITestAnnotation;
 
-public class TestListener implements ITestListener {
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 
-    BasePage basePage;
-    WebDriver driver;
+public class TestListener implements ITestListener, IAnnotationTransformer {
+
+    @Override
+    public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
+        annotation.setRetryAnalyzer(RetryAnalyzer.class);
+    }
 
     //Triggered when a suite start
     @Override
@@ -37,7 +45,13 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         String testName = result.getMethod().getMethodName();
-        ExtentManager.logStepWithScreenshot(BasePage.getDriver(), "Test Passed Succesfully ", "Test End : " + testName + "✅ Test Passed");
+
+        if(!result.getTestClass().getName().toLowerCase().contains("api")) {
+            ExtentManager.logStepWithScreenshot(BasePage.getDriver(), "Test Passed Succesfully ", "Test End : " + testName + "✅ Test Passed");
+        } else {
+            ExtentManager.logStepValidationForAPI("Test End : " + testName + "✅ Test Passed");
+        }
+
     }
 
     //Triggered when a test fails
@@ -46,7 +60,14 @@ public class TestListener implements ITestListener {
         String testName = result.getMethod().getMethodName();
         String failure = result.getThrowable().getMessage();
         ExtentManager.logStep(failure);
-        ExtentManager.logFailure(BasePage.getDriver(),"Test failed", "Test End : " + testName + "❌  Test Failed");
+
+        if(!result.getTestClass().getName().toLowerCase().contains("api")) {
+            ExtentManager.logFailure(BasePage.getDriver(),"Test failed", "Test End : " + testName + "❌  Test Failed");
+        } else {
+            ExtentManager.logFailureAPI("Test End : " + testName + "✅ Test Passed");
+        }
+
+
     }
 
     //Triggered when a Test skips

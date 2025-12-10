@@ -73,7 +73,7 @@ public class ActionDriver {
     //Method to get text from an input field
     public String getText(By locator) {
         try {
-            applyBorder(locator,"green");
+             applyBorder(locator,"green");
              waitForElementVisible(locator);
              return driver.findElement(locator).getText();
         } catch (Exception e) {

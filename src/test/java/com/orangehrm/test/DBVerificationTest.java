@@ -1,5 +1,6 @@
 package com.orangehrm.test;
 
+import com.orangehrm.base.BasePage;
 import com.orangehrm.base.BaseTest;
 import com.orangehrm.pages.HomePage;
 import com.orangehrm.pages.LoginPage;
@@ -11,6 +12,7 @@ import org.testng.Assert;
 import org.testng.ITestListener;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.util.Map;
 
@@ -27,6 +29,8 @@ public class DBVerificationTest extends BaseTest {
 
     @Test(dataProvider = "emplVerification", dataProviderClass = DataProviders.class)
     public void verifyEmployeeNameFromDB(String emplID, String empName) {
+        SoftAssert softAssert = BasePage.getSoftAssert();
+
         ExtentManager.logStep("Loggin with admin credentials");
         loginPage.login(ConfigProperties.getProperty("username"), ConfigProperties.getProperty("password"));
         ExtentManager.logStep("Click on PIM Tab");
@@ -43,8 +47,11 @@ public class DBVerificationTest extends BaseTest {
 
         String empFMName = (employefName + " " + employeedName).trim();
         ExtentManager.logStep("Verify employee first and middle name");
+
+        //SOFT ASSERTION //softAssert.assertTrue(homePage.verifyEmployeeFirstAndMdleName(empFMName));
         Assert.assertTrue(homePage.verifyEmployeeFirstAndMdleName(empFMName));
         ExtentManager.logStep("Verify employee last name");
+
         Assert.assertTrue(homePage.verifyEmployeeLastName(employeelName));
 
         ExtentManager.logStep("DB Validation Completed");
